@@ -81,7 +81,7 @@ public class Esercizio4 : MonoBehaviour
                 min2 = min1;
                 min1 = array[i];
             }
-            else if (array[i] < min2)
+            else if (array[i] < min2 && array[i] > min1)
             {
                 min2 = array[i];
             }
@@ -93,14 +93,14 @@ public class Esercizio4 : MonoBehaviour
     {
         int max1 = array[0];
         int max2 = array[1];
-        for (int i = 0; i < array.Length; i++)
+        for (int i = 0; i < array.Length; i++) 
         {
             if (array[i] > max1)
             {
                 max2 = max1;
                 max1 = array[i];
             }
-            else if (array[i] > max2)
+            else if (array[i] > max2 && array[i] < max1)
             {
                 max2 = array[i];
             }
